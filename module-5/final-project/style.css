@@ -1,0 +1,271 @@
+body {
+    font-family: monospace;
+}
+
+/* Navigation Bar */
+
+#home {
+    background-color: #023047;
+    padding: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -20px;
+    margin-left: -20px;
+    margin-right: -20px;
+}
+
+.profile-name {
+    font-size: 15px;
+    color: lightsteelblue;
+
+}
+
+.topmenu {
+    font-size: 20px;
+    text-decoration: none;
+    color: lightsteelblue;
+    padding: 20px;
+}
+
+.topmenu:hover {
+    color: white;
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+.contact-info {
+    display: flex;
+    align-items: center;
+}
+
+.contact-info i {
+    padding-right: 5px;
+}
+
+/* Used in the About Me sections */
+
+.container {
+    display: flex;
+}
+
+.about-me {
+    display: flex;
+    align-items: center;
+  }
+
+.profile-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#about-me h1 {
+    font-size: 60px;
+    color: #219EBC;
+}
+
+#about-me p {
+    font-size: 25px;
+    color: #219EBC;
+}
+
+h1 img {
+    height: 1em; /* This sets the image height relative to the font size */
+    vertical-align: middle; /* Aligns the image with the text */
+}
+
+.profile-image {
+    width: 400px;
+    margin: 10px;
+}
+
+/* Skills */
+
+.all-skills {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.skill {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid grey;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 30px;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0 3px 10px gray;
+    width: 170px;
+    height: 170px;
+}
+
+.skill img {
+    width: 50px;
+}
+
+.skill h6 {
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.skill p {
+    font-size: 15px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 50px;
+    color: #219EBC;
+    margin: 30px 60px 0px 60px;
+}
+
+/* Projects */
+
+.projects-container {
+    margin-left: 60px;
+    margin-top: 30px;
+}
+
+.project-card {
+    margin: 15px;
+}
+
+.project-card h3{
+    margin: 15px;
+    font-size: 30px;
+}
+
+.project-card li{
+    margin: 15px;
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+hr {
+    width: 75%;
+}
+
+/* Recommendations */
+
+.all-recommendations {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 60px;
+}
+
+.recommendation {
+    font-style: italic;
+    border: 1px solid gray;
+    border-radius: 10px;
+    width: 16rem;
+    margin: 30px;
+    padding: 20px;
+    font-size: 18px;
+}
+
+.recommendation p {
+    margin: 0;
+}
+
+/* Recommendation Form */
+
+#contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.add-rec {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 50px;
+    width: 100%;
+    font-size: 30px;
+    border: 0;
+}
+
+input, textarea {
+    width: 100%;
+    margin: 10px;
+}
+
+button {
+    display: flex;
+    background-color: white;
+    border: 1px solid #219EBC;
+    font-size: 20px;
+    color: #219EBC;
+    padding: 15px 30px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #219EBC;
+    border: 1px solid #219EBC;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+.home-button {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: #219EBC;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    right: 3%;
+    bottom: 3%;
+    cursor: pointer;
+
+}
+
+.home-button a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-button img {
+    width: 60%; 
+    height: 60%;
+    filter: invert(100%);
+
+}
+
+.popup {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 400px;
+    visibility: hidden;
+    border: 1px solid black;
+    border-radius: 5px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #219EBC;
+}
+
+.popup img {
+    width: 30px;
+
+}

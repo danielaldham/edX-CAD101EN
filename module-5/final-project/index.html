@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="script.js"></script>
+    <title>Daniel Aldham - Portfolio</title>
+</head>
+<body>
+    <nav>
+        <div id="home">
+            <div class="profile-name">
+                Daniel Aldham
+                <div class="contact-info">
+                    <i class="material-icons">alternate_email</i>
+                    abc.def@gmail.com
+                </div>
+                <div class="contact-info">
+                    <i class="material-icons">call</i>
+                    +46123456789
+                </div>
+            </div>
+            <div class="topdiv">
+                <a href="#about-me" class="topmenu">About Me</a>
+                <a href="#skills" class="topmenu">Skills</a>
+                <a href="#projects" class="topmenu">Projects</a>
+                <a href="#recommendations" class="topmenu">Recommendations</a>
+            </div>
+            
+        </div>
+    </nav>
+    <section id="about-me" class="container">
+        <div class="profile-pic">
+            <img src="static/physics.gif" alt="atom image" class="profile-image" width="500px">
+        </div>
+        <div class="profile-text">
+            <h1>Hi! I'm Daniel Aldham<img src="static/wave.gif" alt="waving gif">
+            </h1>
+            <p>I am an engineer by trade learning about the world of web development. I enjoy solving problems and find designing web pages a expressive creative outlet</p>
+        </div>
+    </section>
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="all-skills">
+            <div class="skill">
+                <img src="static/python.png" alt="python logo">
+                <h6>Python</h6>
+                <p>3 years experience</p>
+            </div>
+            <div class="skill">
+                <img src="static/html-5.png" alt="python logo">
+                <h6>HTML</h6>
+                <p>1 year experience</p>
+            </div>
+            <div class="skill">
+                <img src="static/css-3.png" alt="python logo">
+                <h6>CSS</h6>
+                <p>1 year experience</p>
+            </div>
+            <div class="skill">
+                <img src="static/js.png" alt="python logo">
+                <h6>JavaScript</h6>
+                <p>1 year experience</p>
+            </div>
+            <div class="skill">
+                <img src="static/microsoft (1).png" alt="python logo">
+                <h6>Microsoft Office</h6>
+                <p>16 years experience</p>
+            </div>
+            <div class="skill">
+                <img src="static/car-engine.png" alt="python logo">
+                <h6>Engineering</h6>
+                <p>9 years experience</p>
+            </div>
+        </div>
+    </section>
+    <section class="projects" id="projects">
+        <h2>Projects</h2>
+        <div id="projects-container" class="projects-container">
+            <div class="project-card">
+                <h3>Blog</h3>
+                <ul>
+                    <li>Created a basic blog to write about my progress with computer science and web development courses</li>
+                </ul>
+            </div>
+            <hr>
+            <div class="project-card">
+                <h3>Team Management</h3>
+                <ul>
+                    <li>Created a website to help my rugby team plan trainings and matches, keep track of player performances and improve contact with players and coaches</li>
+                </ul>
+            </div>
+            <hr>
+            <div class="project-card">
+                <h3>Sports Sim Game</h3>
+                <ul>
+                    <li>I would like to develop some sports sim games, this web development course is the first step</li>
+                </ul>
+            </div>
+            <hr>
+        </div>
+    </section>
+    <section id="recommendations">
+        <h2>Recommendations</h2>
+        <div class="all-recommendations" id="all-recommendations">
+            <div class="recommendation">
+                <p>“Daniel is a skilled Python developer with a talent for writing clean, efficient code. His ability to tackle complex problems and quickly adopt new tools makes him a key asset to any team.”</p>
+            </div>
+            <div class="recommendation">
+                <p>“As a rugby coach, Daniel excels in building team morale and developing players’ skills. His leadership and strategic approach ensure both growth and success on the field.”</p>
+            </div>
+            <div class="recommendation">
+                <p>“Daniel’s expertise in engine development is outstanding. His precision and problem-solving abilities make him a valuable engineer who consistently delivers high-quality results.”</p>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="add-rec">
+            <fieldset>
+                <legend class="introduction">Leave a Recommendation</legend>
+                <input type="text" placeholder="Name">
+                <textarea id="new-rec" placeholder="Message" rows="10"></textarea>
+                <div>
+                    <button id="rec-btn" onclick="addRec()">Submit</button>
+                </div>
+            </fieldset>
+        </div>
+    </section>
+    <div class="home-button">
+        <a href="#home"><img src="static/up-arrow.png" alt=""></a>
+    </div>
+    <div class="popup" id="popup">
+        <img src="static/checkmark--outline.svg">
+        <h3>Thanks for leaving a recommendation!</h3>
+        <button onclick="showPopup(false)">OK</button>
+    </div>
+    <footer>
+        <a href="https://www.flaticon.com/free-animated-icons/hello" title="hello animated icons">Icons created by Freepik - Flaticon</a>
+        <a href="https://www.flaticon.com/free-icons/microsoft" title="microsoft icons">Icons created by Tahsin Tahil - Flaticon</a>
+    </footer>
+</body>
+</html>
